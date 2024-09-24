@@ -14,8 +14,8 @@
         echo "<p> Il tasso è: $tasso </p><br>";
         echo "<p> Il numero di giorni è: $numGiorni </p><br>";
         $interesse = ($capitale * $tasso * $numGiorni) /36500;
-        number_format($interesse, 2);
-        echo "<h2 style='color: green'> Il tasso di interesse è: $interesse €</h2>"
+        $n_formattato = number_format($interesse, 2);
+        echo "<h2 style='color: green'> Il tasso di interesse è: $n_formattato €</h2>"
     ?>
 </body>
 </html>
